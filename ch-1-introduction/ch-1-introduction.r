@@ -16,7 +16,7 @@ library(rvest)
 ### --------------------------------------------------------------
 
 # parsing from Wikipedia web site
-# heritage_parsed <- htmlParse("http://en.wikipedia.org/wiki/List_of_World_Heritage_in_Danger", encoding = "UTF-8")
+# heritage_parsed <- htmlParse("https://en.wikipedia.org/wiki/List_of_World_Heritage_in_Danger", encoding = "UTF-8")
 
 # parsing from locally stored HTML file
 heritage_parsed <- htmlParse("worldheritagedanger.htm",encoding="UTF-8")
