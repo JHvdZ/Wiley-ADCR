@@ -9,6 +9,7 @@
 library(stringr)
 library(XML)
 library(maps)
+library(rvest)
 
 
 ### 1.1. Case Study: World Heritage Sites in Danger
@@ -45,7 +46,7 @@ danger_table$locn[c(1,3,5)]
 reg <- "[[:alpha:] ]+(?=[[:digit:]])"
 country <- str_extract(danger_table$locn, perl(reg)) # use forward assertion in Perl regular expression
 country
-country[29] <- "Côte d'Ivoire / Guinea"
+country[29] <- "CÃ´te d'Ivoire / Guinea"
 country[32] <- ""
 danger_table$country <- country
 
